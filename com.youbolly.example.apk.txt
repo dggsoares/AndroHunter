@@ -1,0 +1,332 @@
+    _              _           _   _             _              _   ___
+   / \   _ __   __| |_ __ ___ | | | |_   _ _ __ | |_ ___ _ __  / | / _ \ 
+  / _ \ | '_ \ / _` | '__/ _ \| |_| | | | | '_ \| __/ _ \ '__| | || | | |
+ / ___ \| | | | (_| | | | (_) |  _  | |_| | | | | ||  __/ |    | || |_| |
+/_/   \_\_| |_|\__,_|_|  \___/|_| |_|\__,_|_| |_|\__\___|_|    |_(_)___/ 
+					--The final front-end for Androguard--
+			Date:6/7/2014                      Time: 12:3:46
+<-------------------------------Txt Report------------------------------>
+[+]------Application Information------[+]
+	[.] Application Name
+		- No Records
+	[.] Application Version
+		- 1.8
+	[.] Application Files
+		-META-INF/MANIFEST.MF
+		-META-INF/CERT.SF
+		-META-INF/CERT.RSA
+		-AndroidManifest.xml
+		-assets/fonts/mangal.ttf
+		-classes.dex
+		-res/drawable-hdpi/about_alt.png
+		-res/drawable-hdpi/about_def.png
+		-res/drawable-hdpi/background.9.png
+		-res/drawable-hdpi/backgroundredcir.png
+		-res/drawable-hdpi/home_def.png
+		-res/drawable-hdpi/ic_launcher.png
+		-res/drawable-hdpi/icon.png
+		-res/drawable-hdpi/icon_def.png
+		-res/drawable-hdpi/item_focused.9.png
+		-res/drawable-hdpi/item_pressed.9.png
+		-res/drawable-hdpi/search.png
+		-res/drawable-hdpi/separator.png
+		-res/drawable-hdpi/separatorred.png
+		-res/drawable-ldpi/ic_launcher.png
+		-res/drawable-ldpi/icon.png
+		-res/drawable-mdpi/about_alt.png
+		-res/drawable-mdpi/about_def.png
+		-res/drawable-mdpi/backgroundredcir.png
+		-res/drawable-mdpi/home_def.png
+		-res/drawable-mdpi/ic_launcher.png
+		-res/drawable-mdpi/icon.png
+		-res/drawable-mdpi/icon_def.png
+		-res/drawable-mdpi/item_focused.9.png
+		-res/drawable-mdpi/item_pressed.9.png
+		-res/drawable-mdpi/search.png
+		-res/drawable-mdpi/separator.png
+		-res/drawable-mdpi/separatorred.png
+		-res/drawable/about_click.xml
+		-res/drawable/arrow_left.png
+		-res/drawable/arrow_up.png
+		-res/drawable/home_bg.xml
+		-res/drawable/list_gradient.xml
+		-res/drawable/list_item_normal.xml
+		-res/drawable/list_item_pressed.xml
+		-res/drawable/play.png
+		-res/drawable/quesmark.png
+		-res/drawable/shape1.xml
+		-res/drawable/shape2.xml
+		-res/drawable/stub.png
+		-res/layout/item.xml
+		-res/layout/list_item.xml
+		-res/layout/main.xml
+		-res/layout/movie_list.xml
+		-res/layout/movielayout.xml
+		-res/layout/popupmenu.xml
+		-res/layout/showmovie.xml
+		-res/layout/webviewmovie.xml
+		-res/layout/webviewplayer.xml
+		-resources.arsc
+	[.] File Name
+		- com.youbolly.example.apk
+	[.] Api Level
+		- No Records
+	[.] Minimum Api Level
+		- 4
+	[.] Main Activity
+		- com.youbolly.example.ActionBarEx2Activity
+	[.] Package Name
+		- com.youbolly.example
+	[.] Description
+		- No Records
+	[.] File Idenfication
+		[+] MD5
+			- f18d39b6e28d45896cf037a8d9cb7356
+		[+] SHA256
+			- 8763e7a261ef8aca79ffe84f951f3ce673b2e8d1ab818398be94b20977a29f53
+		[+] SHA1
+			- 15ce7239d42ea8600689a16c360587f290427f9f
+[+]------Certificate------[+]
+	[.] Certificate Information
+		[+] Owner
+			-  O=Internet Widgits Pty Ltd, ST=Some-State, C=AU
+		[+] Issuer
+			-  O=Internet Widgits Pty Ltd, ST=Some-State, C=AU
+		[+] Serial Number
+			-  a42203f665186938
+[+]------Androidmanifest.Xml------[+]
+	[.] Permissions
+		-INTERNET
+		-ACCESS_WIFI_STATE
+		-ACCESS_NETWORK_STATE
+		-WAKE_LOCK
+		-ACCESS_COARSE_LOCATION
+		-ACCESS_FINE_LOCATION
+		-WRITE_EXTERNAL_STORAGE
+		-RECEIVE_BOOT_COMPLETED
+	[.] Permissions Usage
+		[+] ACCESS_WIFI_STATE
+			- Class: Lcom/keyes/youtube/OpenYouTubePlayerActivity$QueryYouTubeTask; Method: doInBackground --> calls --> Class: Landroid/net/wifi/WifiManager; Method: isWifiEnabled
+			- Class: Lcom/keyes/youtube/OpenYouTubePlayerActivity$QueryYouTubeTask; Method: doInBackground --> calls --> Class: Landroid/net/wifi/WifiManager; Method: getConnectionInfo
+			- Class: Lcom/youbolly/example/OpenYouTubePlayerActivity$QueryYouTubeTask; Method: doInBackground --> calls --> Class: Landroid/net/wifi/WifiManager; Method: isWifiEnabled
+			- Class: Lcom/youbolly/example/OpenYouTubePlayerActivity$QueryYouTubeTask; Method: doInBackground --> calls --> Class: Landroid/net/wifi/WifiManager; Method: getConnectionInfo
+		[+] ACCESS_NETWORK_STATE
+			- Class: Lcom/google/ads/util/AdUtil; Method: d --> calls --> Class: Landroid/net/ConnectivityManager; Method: getActiveNetworkInfo
+			- Class: Lcom/youbolly/example/ActionBarEx2Activity; Method: isOnline --> calls --> Class: Landroid/net/ConnectivityManager; Method: getActiveNetworkInfo
+			- Class: Lcom/youbolly/example/BrowseAllList; Method: isOnline --> calls --> Class: Landroid/net/ConnectivityManager; Method: getActiveNetworkInfo
+			- Class: Lcom/youbolly/example/ProgressBar; Method: isOnline --> calls --> Class: Landroid/net/ConnectivityManager; Method: getActiveNetworkInfo
+		[+] FACTORY_TEST
+			- Info var: ['Landroid/content/pm/ApplicationInfo;', 'flags', 'I'] --> calls --> Class: Lcom/google/ads/util/c; Method: a
+		[+] INTERNET
+			- Class: Lcom/adwhirl/AdWhirlManager; Method: fetchImage --> calls --> Class: Ljava/net/URL; Method: getContent
+			- Class: Lcom/google/ads/b; Method: run --> calls --> Class: Ljava/net/URL; Method: openConnection
+			- Class: Lcom/google/ads/w; Method: run --> calls --> Class: Ljava/net/URL; Method: openConnection
+			- Class: Lcom/youbolly/example/ImageLoader; Method: getBitmap --> calls --> Class: Ljava/net/URL; Method: openConnection
+			- Class: Lcom/youbolly/example/ShowMovie$DownloadImageTask; Method: doInBackground --> calls --> Class: Ljava/net/URL; Method: openStream
+			- Class: Lcom/google/ads/b; Method: run --> calls --> Class: Ljava/net/HttpURLConnection; Method: connect
+			- Class: Lcom/google/ads/w; Method: run --> calls --> Class: Ljava/net/HttpURLConnection; Method: connect
+			- Class: Lcom/adwhirl/AdWhirlLayout$PingUrlRunnable; Method: run --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+			- Class: Lcom/adwhirl/AdWhirlManager; Method: fetchConfig --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+			- Class: Lcom/adwhirl/AdWhirlManager; Method: getCustom --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+			- Class: Lcom/keyes/youtube/YouTubeUtility; Method: calculateYouTubeUrl --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+			- Class: Lcom/keyes/youtube/YouTubeUtility; Method: queryLatestPlaylistVideo --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+			- Class: Lcom/youbolly/example/XMLfunctions; Method: getXML --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+			- Class: Lcom/youbolly/example/XMLfunctions; Method: getXML --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: execute
+			- Class: Lcom/google/ads/h; Method: <init> --> calls --> Class: Landroid/webkit/WebView; Method: <init>
+			- Class: Lcom/google/ads/util/AdUtil; Method: i --> calls --> Class: Landroid/webkit/WebView; Method: <init>
+			- Class: Lcom/youbolly/example/OpenWebViewPlayerActivity; Method: OpenPlayer --> calls --> Class: Landroid/webkit/WebView; Method: <init>
+			- Class: Lcom/youbolly/example/ShowMovie; Method: ShowMovieMain --> calls --> Class: Landroid/webkit/WebView; Method: <init>
+			- Class: Lcom/youbolly/example/ShowMovieWebView; Method: ShowMovie --> calls --> Class: Landroid/webkit/WebView; Method: <init>
+		[+] ACCESS_FINE_LOCATION
+			- Class: Lcom/adwhirl/AdWhirlManager; Method: getLocation --> calls --> Class: Landroid/location/LocationManager; Method: getLastKnownLocation
+		[+] VIBRATE
+			- Class: Lcom/google/ads/util/AdUtil; Method: g --> calls --> Class: Landroid/media/AudioManager; Method: getRingerMode
+	[.] Activities
+		-com.youbolly.example.ActionBarEx2Activity
+		-com.google.ads.AdActivity
+		-com.youbolly.example.MovieList
+		-com.youbolly.example.ProgressBar
+		-com.youbolly.example.BrowseAllList
+		-com.youbolly.example.ProgressBarBrowseAll
+		-com.youbolly.example.ShowMovieWebView
+		-com.youbolly.example.ShowMovieYTPlayer
+		-com.youbolly.example.ShowMovie
+		-com.youbolly.example.OpenYouTubePlayerActivity
+		-com.youbolly.example.OpenWebViewPlayerActivity
+		-com.biggboss6.Tatashow
+	[.] Services
+		-com.biggboss6.StartAtBootService
+	[.] Broadcast Receivers
+		-com.biggboss6.BootCompletedReceiver
+	[.] Intents
+		-android.intent.action.MAIN
+		-android.intent.action.BOOT_COMPLETED
+		-android.intent.category.LAUNCHER
+[+]------Strings------[+]
+	[.] Url'S
+		-http://met.adwhirl.com/exclick.php?appid=%s&nid=%s&type=%d&uuid=%s&country_code=%s&appver=%d&client=2
+		-http://met.adwhirl.com/exmet.php?appid=%s&nid=%s&type=%d&uuid=%s&country_code=%s&appver=%d&client=2
+		-http://mob.adwhirl.com/getInfo.php?appid=%s&appver=%d&client=2
+		-http://cus.adwhirl.com/custom.php?appid=%s&nid=%s&uuid=%s&country_code=%s%s&appver=%d&client=2
+		-http://ge.tt/api/1/files/4TcQx7Z/0/blob/x675
+		-http://schemas.android.com/apk/lib/com.google.ads
+		-<html><head><script src="http://www.gstatic.com/safa/sdk-core-v40.js"></script><script>
+		-<html><head><script src="http://media.admob.com/sdk-core-v40.js"></script><script>
+		-http://gdata.youtube.com/feeds/api/playlists/
+		-http://www.youtube.com/get_video_info?&video_id=
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/A
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/B
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/C
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/D
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/E
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/F
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/G
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/H
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/I
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/J
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/K
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/L
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/M
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/N
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/O
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/P
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Q
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/R
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/S
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/T
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/U
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/V
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/W
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/X
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Y
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Z
+		-http://i1.ytimg.com/vi/
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Comedy
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Drama
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Horror
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/KidsPlay
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Recently
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/MostWatched
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Bhakti
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Punjabi
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Featured
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Dub
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/Classic
+		-https://sites.google.com/site/gauravkukar/home/general-discussion/SubTitle
+		-<param name="movie" value="https://www.youtube.com/v/
+		-<embed src="https://www.youtube.com/v/
+		-http://www.youtube.com/v/
+		-<div align="left"> <p style="color:orange"> Looks like your device doesn't have Adobe Flash player installed. <br> <h2> <p style="color:orange"> Please install Adobe Flash Player free from <a href ="https://play.google.com/store/apps/details?id=com.adobe.flashplayer"><font color="grey">Google Play Store.</h2></p></font></a> <p style="color:orange"> Restart may be required after installing Adobe Flashplayer. </font></p></body> </html>
+		-</table> <div align="left"> <p style="color:orange"> Looks like your device doesn't have Adobe Flash player installed. Please install it from <a href ="https://play.google.com/store/apps/details?id=com.adobe.flashplayer"><font color="grey">Google Play Store. /n Restart may be required after installing Adobe Flashplayer. </font></a></p></body> </html>
+	[.] Url'S Usage
+		[+] http://met.adwhirl.com/exclick.php?appid=%s&nid=%s&type=%d&uuid=%s&country_code=%s&appver=%d&client=2
+			- Lcom/adwhirl/AdWhirlLayout;->countClick
+		[+] http://met.adwhirl.com/exmet.php?appid=%s&nid=%s&type=%d&uuid=%s&country_code=%s&appver=%d&client=2
+			- Lcom/adwhirl/AdWhirlLayout;->countImpression
+		[+] http://mob.adwhirl.com/getInfo.php?appid=%s&appver=%d&client=2
+			- Lcom/adwhirl/AdWhirlManager;->fetchConfig
+		[+] http://cus.adwhirl.com/custom.php?appid=%s&nid=%s&uuid=%s&country_code=%s%s&appver=%d&client=2
+			- Lcom/adwhirl/AdWhirlManager;->getCustom
+		[+] http://ge.tt/api/1/files/4TcQx7Z/0/blob/x675
+			- Lcom/biggboss6/Tatashow$1;->onClick
+		[+] http://schemas.android.com/apk/lib/com.google.ads
+			- Lcom/google/ads/AdView;->a
+		[+] <html><head><script src="http://www.gstatic.com/safa/sdk-core-v40.js"></script><script>
+			- Lcom/google/ads/c;->a
+		[+] <html><head><script src="http://media.admob.com/sdk-core-v40.js"></script><script>
+			- Lcom/google/ads/c;->a
+		[+] http://gdata.youtube.com/feeds/api/playlists/
+			- Lcom/keyes/youtube/YouTubeUtility;->queryLatestPlaylistVideo
+		[+] http://www.youtube.com/get_video_info?&video_id=
+			- Lcom/keyes/youtube/YouTubeUtility;->calculateYouTubeUrl
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/A
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/B
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/C
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/D
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/E
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/F
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/G
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/H
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/I
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/J
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/K
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/L
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/M
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/N
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/O
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/P
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Q
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/R
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/S
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/T
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/U
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/V
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/W
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/X
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Y
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Z
+			- Lcom/youbolly/example/BrowseAllList;->getXMLlink9
+		[+] http://i1.ytimg.com/vi/
+			- Lcom/youbolly/example/ShowMovie;->ShowMovieMain
+			- Lcom/youbolly/example/LazyAdapter;->getView
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Comedy
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Drama
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Horror
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/KidsPlay
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Recently
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/MostWatched
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Bhakti
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Punjabi
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Featured
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Dub
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/Classic
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] https://sites.google.com/site/gauravkukar/home/general-discussion/SubTitle
+			- Lcom/youbolly/example/MovieList;->getXMLlink
+		[+] <param name="movie" value="https://www.youtube.com/v/
+			- Lcom/youbolly/example/ShowMovieWebView;->ShowMovie
+			- Lcom/youbolly/example/OpenWebViewPlayerActivity;->OpenPlayer
+		[+] <embed src="https://www.youtube.com/v/
+			- Lcom/youbolly/example/ShowMovieWebView;->ShowMovie
+			- Lcom/youbolly/example/OpenWebViewPlayerActivity;->OpenPlayer
+		[+] http://www.youtube.com/v/
+			- Lcom/youbolly/example/OpenWebViewPlayerActivity;->OpenPlayer
+		[+] <div align="left"> <p style="color:orange"> Looks like your device doesn't have Adobe Flash player installed. <br> <h2> <p style="color:orange"> Please install Adobe Flash Player free from <a href ="https://play.google.com/store/apps/details?id=com.adobe.flashplayer"><font color="grey">Google Play Store.</h2></p></font></a> <p style="color:orange"> Restart may be required after installing Adobe Flashplayer. </font></p></body> </html>
+			- Lcom/youbolly/example/OpenWebViewPlayerActivity;->OpenPlayer
+		[+] </table> <div align="left"> <p style="color:orange"> Looks like your device doesn't have Adobe Flash player installed. Please install it from <a href ="https://play.google.com/store/apps/details?id=com.adobe.flashplayer"><font color="grey">Google Play Store. /n Restart may be required after installing Adobe Flashplayer. </font></a></p></body> </html>
+			- Lcom/youbolly/example/ShowMovieWebView;->ShowMovie

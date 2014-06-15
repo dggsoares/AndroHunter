@@ -1,0 +1,303 @@
+﻿<!--
+O que falta
+Adicionar data no cabecalho com o Orb anterior
+Criar logo AndroHunter_ Mais ou Menos
+Componente de codigo fonte na pagina (como os foruns)
+Dividir as informações em paginas separadas
+Destacar sub-categorias
+Dimunuir o tamanho da imagem do menu principal
+Resolver o botao Source code
+Adicionado o titulo do documento_OK
+Alterar o CSS_Mais ou Menos
+-->
+
+{%- macro print_line(option, line) -%}
+{%- if line -%}
+    {{ option }} : {{ line|replace("['","")|replace("']","")|replace("u'","")}}<br/>
+{%- endif -%}
+{%- endmacro -%} 
+
+{%- macro print_line(line) -%}
+{%- if line -%}
+    <span class="content">{{ line|replace("['","")|replace("']","")}}</span><br/>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro print_category(category) -%}
+{%- if category -%}
+    <div>
+        <h1 class="category"><img width="26" height="25" src="images/android-icon_small.png"><a name="{{ category|replace('_','')}}">{{ category|replace('_',' ')|title }}</a>
+        </h1><a href="#topo">back</a>
+    </div>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro print_sub_category(sub_category) -%}
+{%- if sub_category -%}
+    <h3>{{ sub_category|replace('_',' ')|title }}<br/></h3>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro print_key(key) -%}
+{%- if key -%}
+    <h5>{{ key|replace('_',' ')|title }}<br/></h5>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro print_report_date(date) -%}
+{%- if date -%}
+    <h5 class="system_date">Report Date: {{date['data']}} - Report Time: {{date['time']}}</h5>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro render_menu(data, source) -%}
+{%- if data -%}
+    {%- for item in data -%}
+        <li class="">
+            <a href="#{{ item|replace('_', '') }}"><span class="l"></span><span class="r"></span><span class="t">{{ item|replace('_', ' ')|title }}</span></a>
+        </li>
+    {%- endfor -%}
+    {%- for item in source -%}
+        <li class="">
+            <a href="#{{ item|replace('_', '') }}"><span class="l"></span><span class="r"></span><span class="t">{{ item|replace('_', ' ')|title }}</span></a>
+        </li>
+    {%- endfor -%}
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro render_content(data) -%}
+{%- if data -%}
+    {%- for category in data -%}
+
+        {{ print_category(category) }} <!-- Categoria-->
+
+        {%- for sub_category in data[category] -%}
+
+           {{ print_sub_category(sub_category) }} <!-- Sub Categoria -->
+
+            {%- if data[category][sub_category] is string -%}
+
+                {{ print_line(data[category][sub_category]) }} <!-- print str -->
+
+            {%- elif data[category][sub_category] is mapping -%}
+                {%- for content in data[category][sub_category] -%}
+                    {%- if content is iterable -%}
+
+                        {{ print_key(content) }} <!-- print chave do dicionario -->
+
+                        {%- for content_n2 in data[category][sub_category][content] -%}
+
+                            {{ print_line(content_n2) }} <!-- print conteudo de cada chave do dicionario acima -->
+
+                        {%- endfor -%}
+                    {% endif %}
+                {%- endfor -%}
+            {%- elif data[category][sub_category] is iterable -%}
+                {%- for content in data[category][sub_category] -%}
+
+                    {{ print_line(content) }} <!-- print lista -->
+
+                {%- endfor -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro render_source_code(source) -%}
+{%- if source -%}
+    {%- for category in source -%}
+
+        {{ print_category(category) }} <!-- Categoria-->
+
+        {%- for sub_category in source[category] -%}
+
+           {{ print_sub_category(sub_category) }} <!-- Sub Categoria -->
+
+            {%- for class_name in source[category][sub_category] -%}
+
+                {{ print_class_name(class_name) }} <!-- Class Name -->
+
+                {%- for method_name in source[category][sub_category][class_name] -%}
+
+                    {{ print_method_name(method_name, class_name) }} <!-- Method Name -->
+                    {{ print_method_source(source[category][sub_category][class_name][method_name]) }} <!-- Source Code -->
+
+                {%- endfor -%}
+
+            {%- endfor -%}
+
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro print_method_name(method_name, class_name) -%}
+{%- if method_name -%}
+    <span class="method">Method:</span> <span class="method_name">{{ method_name|replace('<','&lsaquo;')|replace('>','&rsaquo;') }}</span><br/>
+    <span class="method"><a onclick="window.open('./cfg/{{class_name|replace('/','-')|replace(';','')}}/{{ method_name|replace('<','')|replace('>','') }}.png', 'Control Flow Graphic', 'STATUS=NO, TOOLBAR=NO, LOCATION=NO , DIRECTORIES=NO, RESISABLE=YES, SCROLLBARS=YES, TOP=10, LEFT=10, WIDTH=770, HEIGHT=400');">CFG</a></span>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro print_method_source(method_source) -%}
+{%- if method_source -%}
+    <div class="source_code">
+        <pre class="brush: java">
+            {{ method_source }}
+        </pre>
+    </div>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro print_class_name(class_name) -%}
+{%- if class_name -%}
+    <span class="class">Class:</span><span class="class_name">{{ class_name }}</span><br/>
+{%- endif -%}
+{%- endmacro -%}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title>{{data['application_information']['file_name']}}</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="css/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+    <!--SyntaxHighlighter-->
+    <link href="css/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushJava.js"></script>
+
+    <script type="text/javascript">
+     SyntaxHighlighter.all()
+    </script>
+
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+                <a name="topo"></a>
+                <div class="teste">
+                	<div class="l"></div>
+                	<div class="r"></div>
+                        {{ print_report_date(date) }}
+                </div>
+                <div class="art-header">
+                    <div class="art-header-jpeg"></div>
+                    <div class="art-logo">
+                    </div>
+                </div>
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content">
+                            <div class="art-post">
+                                <div class="art-post-body">
+                            <div class="art-post-inner art-article">
+                                {{ render_content(data) }}
+                                {{ render_source_code(source) }}
+                                <!--Conteudo Principal -->
+                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-vmenublock">
+                                <div class="art-vmenublock-body">
+                                            <div class="art-vmenublockheader">
+                                                <div class="l"></div>
+                                                <div class="r"></div>
+                                                 <div class="t">Navigation</div>
+                                            </div>
+                                            <div class="art-vmenublockcontent">
+                                                <div class="art-vmenublockcontent-body">
+                                                            <ul class="art-vmenu">
+                                                                {{ render_menu(data, source) }}
+                                                            </ul>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            <div class="art-block">
+                                <div class="art-block-body">
+                                            <div class="art-blockcontent">
+                                                <div class="art-blockcontent-body">
+                                            
+                                            <!--XXX Caixa de Subscribe XXX-->
+
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            <div class="art-block">
+                                <div class="art-block-body">
+                                            <div class="art-blockcontent">
+                                                <div class="art-blockcontent-body">
+                                            
+                                            <!--XXX Textos lateral direita inferior XXX-->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            <div class="art-block">
+                                <div class="art-block-body">
+                                            <div class="art-blockcontent">
+                                                <div class="art-blockcontent-body">
+                                            
+                                            <!--XXX Informações de Contato XXX-->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-inner">
+                        <div class="art-footer-text">
+                            <p>Copyright &copy; 2014 --- All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="art-footer-background"></div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer">AndroGuard 1.0</p>
+    </div>
+    
+</body>
+</html>

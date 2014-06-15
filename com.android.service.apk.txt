@@ -1,0 +1,137 @@
+    _              _           _   _             _              _   ___
+   / \   _ __   __| |_ __ ___ | | | |_   _ _ __ | |_ ___ _ __  / | / _ \ 
+  / _ \ | '_ \ / _` | '__/ _ \| |_| | | | | '_ \| __/ _ \ '__| | || | | |
+ / ___ \| | | | (_| | | | (_) |  _  | |_| | | | | ||  __/ |    | || |_| |
+/_/   \_\_| |_|\__,_|_|  \___/|_| |_|\__,_|_| |_|\__\___|_|    |_(_)___/ 
+					--The final front-end for Androguard--
+			Date:6/7/2014                      Time: 10:33:38
+<-------------------------------Txt Report------------------------------>
+[+]------Application Information------[+]
+	[.] Application Name
+		- No Records
+	[.] Application Version
+		- 1.00.11
+	[.] Application Files
+		-res/raw/services
+		-AndroidManifest.xml
+		-resources.arsc
+		-classes.dex
+		-META-INF/MANIFEST.MF
+		-META-INF/CERT.SF
+		-META-INF/CERT.RSA
+	[.] File Name
+		- com.android.service.apk
+	[.] Api Level
+		- No Records
+	[.] Minimum Api Level
+		- 7
+	[.] Main Activity
+		- No records
+	[.] Package Name
+		- com.android.service
+	[.] Description
+		- No Records
+	[.] File Idenfication
+		[+] MD5
+			- 68df97cd5fb2a54b135b5a5071ae11cf
+		[+] SHA256
+			- 1b47265eab3752a7d64a64f570e166a2114e41f559fa468547e6fa917cf64256
+		[+] SHA1
+			- dbe4d88ccda731e860b23f95cf46de53482f6b32
+	[.] Antivirus Identification(Powered By Virustotal)
+		[+] Antivirus Total
+			- 51
+		[+] Antivirus Positive
+			- 32
+[+]------Certificate------[+]
+	[.] Certificate Information
+		[+] Owner
+			-  CN=Dragon, L=SZ, ST=GZ, C=CN
+		[+] Issuer
+			-  CN=Dragon, L=SZ, ST=GZ, C=CN
+		[+] Serial Number
+			-  1c8833c6
+[+]------Androidmanifest.Xml------[+]
+	[.] Permissions
+		-INTERNET
+		-ACCESS_NETWORK_STATE
+		-READ_PHONE_STATE
+		-SET_WALLPAPER
+		-WRITE_EXTERNAL_STORAGE
+		-MOUNT_UNMOUNT_FILESYSTEMS
+		-RECEIVE_SMS
+		-SEND_SMS
+		-RECEIVE_WAP_PUSH
+		-READ_PHONE_STATE
+		-WRITE_APN_SETTINGS
+		-RECEIVE_BOOT_COMPLETED
+		-WAKE_LOCK
+		-DEVICE_POWER
+		-SEND_SMS
+		-WRITE_APN_SETTINGS
+		-CHANGE_NETWORK_STATE
+		-READ_SMS
+		-READ_CONTACTS
+		-WRITE_CONTACTS
+		-CALL_PHONE
+		-INTERNET
+		-MODIFY_PHONE_STATE
+	[.] Permissions Usage
+		[+] FACTORY_TEST
+			- Info var: ['Landroid/content/pm/ApplicationInfo;', 'flags', 'I'] --> calls --> Class: Lcom/android/service/b; Method: e
+		[+] ACCESS_NETWORK_STATE
+			- Class: Lcom/android/c/c; Method: a --> calls --> Class: Landroid/net/ConnectivityManager; Method: getActiveNetworkInfo
+			- Class: Lcom/android/c/c; Method: c --> calls --> Class: Landroid/net/ConnectivityManager; Method: getNetworkInfo
+			- Class: Lcom/android/service/ListenService; Method: a --> calls --> Class: Landroid/net/ConnectivityManager; Method: getNetworkInfo
+		[+] INTERNET
+			- Class: Lcom/android/c/a; Method: a --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+			- Class: Lcom/android/c/a; Method: a --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: execute
+			- Class: Lcom/android/service/ListenService; Method: a --> calls --> Class: Lorg/apache/http/impl/client/DefaultHttpClient; Method: <init>
+		[+] WAKE_LOCK
+			- Class: Lcom/android/service/ListenService; Method: onCreate --> calls --> Class: Landroid/os/PowerManager; Method: newWakeLock
+			- Class: Lcom/android/service/MessagingService; Method: onCreate --> calls --> Class: Landroid/os/PowerManager; Method: newWakeLock
+			- Class: Lcom/android/service/ListenService; Method: onCreate --> calls --> Class: Landroid/os/PowerManager$WakeLock; Method: acquire
+			- Class: Lcom/android/service/MessagingService; Method: onCreate --> calls --> Class: Landroid/os/PowerManager$WakeLock; Method: acquire
+			- Class: Lcom/android/service/MessagingService; Method: onDestroy --> calls --> Class: Landroid/os/PowerManager$WakeLock; Method: release
+		[+] READ_PHONE_STATE
+			- Class: Lcom/android/e/a; Method: a --> calls --> Class: Landroid/telephony/TelephonyManager; Method: getSubscriberId
+			- Class: Lcom/android/service/ListenService; Method: onCreate --> calls --> Class: Landroid/telephony/TelephonyManager; Method: getDeviceId
+			- Class: Lcom/android/service/ListenService; Method: onCreate --> calls --> Class: Landroid/telephony/TelephonyManager; Method: getSubscriberId
+			- Class: Lcom/android/service/MessagingService; Method: onCreate --> calls --> Class: Landroid/telephony/TelephonyManager; Method: listen
+			- Class: Lcom/android/service/b; Method: n --> calls --> Class: Landroid/telephony/TelephonyManager; Method: getSubscriberId
+			- Class: Lcom/android/service/b; Method: a --> calls --> Class: Landroid/telephony/TelephonyManager; Method: getDeviceId
+			- Class: Lcom/android/service/b; Method: a --> calls --> Class: Landroid/telephony/TelephonyManager; Method: getSubscriberId
+		[+] SEND_SMS
+			- Class: Lcom/android/b/e; Method: a --> calls --> Class: Landroid/telephony/gsm/SmsManager; Method: getDefault
+			- Class: Lcom/android/b/e; Method: a --> calls --> Class: Landroid/telephony/gsm/SmsManager; Method: sendTextMessage
+			- Class: Lcom/android/receiver/SmsReceiver; Method: <init> --> calls --> Class: Landroid/telephony/SmsManager; Method: getDefault
+			- Class: Lcom/android/receiver/SmsReceiver; Method: onReceive --> calls --> Class: Landroid/telephony/SmsManager; Method: sendTextMessage
+	[.] Activities
+		- No records
+	[.] Services
+		-com.android.service.MessagingService
+		-com.android.service.ListenService
+	[.] Broadcast Receivers
+		-com.android.receiver.PlugScreenRecevier
+		-com.android.receiver.PlugLockRecevier
+		-com.android.receiver.BootReceiver
+		-com.android.receiver.ScreenReceiver
+	[.] Intents
+		-android.intent.action.SCREEN_OFF
+		-android.intent.action.USER_PRESENT
+		-android.intent.action.BOOT_COMPLETED
+		-android.intent.action.SCREEN_ON
+		-android.intent.category.DEFAULT
+[+]------Strings------[+]
+	[.] Url'S
+		-http://
+		-http://dzy6.com:96/andriodreport.do
+		-http://www.
+	[.] Url'S Usage
+		[+] http://
+			- Lcom/android/f/h;->a
+			- Lcom/android/c/a;->a
+		[+] http://dzy6.com:96/andriodreport.do
+			- Lcom/android/service/ListenService;-><clinit>
+		[+] http://www.
+			- Lcom/android/service/b;->a
