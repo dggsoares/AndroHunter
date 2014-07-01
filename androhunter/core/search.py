@@ -1,7 +1,7 @@
 __author__ = 'dggsoares'
 
-#VirusTotal Imports
-import virustotal
+#Virustotal Imports
+from virustotal.virustotal import *
 
 #Androguard Imports
 from androhunter.core.search import *
@@ -259,10 +259,11 @@ def grab_file_identification(path_apk):
 
 
 def grab_virustotal(path_apk):
+    print("[+] Grab Virustotal results...")
     detection = collections.OrderedDict()
     data = []
     api_key = '641e2a5d616063e15d56941a84d98c31492aae6574b829a0af057f07408994f8'
-    v = virustotal.VirusTotal(api_key)
+    v = VirusTotal(api_key)
     report = v.scan(path_apk)
     report.join()
     assert report.done is True

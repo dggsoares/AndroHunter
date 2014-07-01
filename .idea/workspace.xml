@@ -1,7 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea093811-5445-4573-8ba9-f7dc04d0ee54" name="Default" comment="" />
+    <list default="true" id="ea093811-5445-4573-8ba9-f7dc04d0ee54" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virustotal/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-receiver-SmsReceiver/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-receiver-SmsReceiver/onReceive.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-ListenService/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-ListenService/clinit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-ListenService/init.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-ListenService/onBind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-ListenService/onCreate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-ListenService/onDestroy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-ListenService/onStart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-MessagingService/init.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-MessagingService/onBind.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-MessagingService/onCreate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-MessagingService/onDestroy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-MessagingService/onStart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-a/init.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-a/run.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/d.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/e.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/i.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/init.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/j.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/k.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/l.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/n.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/o.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/p.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/q.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-b/r.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-c/init.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-c/onCallStateChanged.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-d/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/androhunter/report/template/cfg/Lcom-android-service-d/init.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androhunter.py" afterPath="$PROJECT_DIR$/androhunter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androhunter/report/template/com.android.service.apk.html" afterPath="$PROJECT_DIR$/androhunter/report/template/com.android.service.apk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androhunter/core/search.py" afterPath="$PROJECT_DIR$/androhunter/core/search.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="AndroHunter.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,25 +71,25 @@
       <file leaf-file-name="core.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/androhunter/core/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="10" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="345">
+            <state line="7" column="29" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="androhunter.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="androhunter.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/androhunter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="29" selection-start="278" selection-end="278" vertical-scroll-proportion="0.32451922" vertical-offset="45" max-vertical-offset="600">
+            <state line="30" column="61" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="search.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/androhunter/core/search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4185">
+            <state line="274" column="20" selection-start="7235" selection-end="7235" vertical-scroll-proportion="0.7766749" vertical-offset="3797" max-vertical-offset="4200">
               <folding />
             </state>
           </provider>
@@ -59,6 +104,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/androhunter.py" />
+        <option value="$PROJECT_DIR$/androhunter/core/search.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="4" />
@@ -92,6 +145,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -107,6 +161,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AndroHunter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroHunter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroHunter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="virustotal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -144,7 +212,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,7 +224,57 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/virustotal" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.Python 2.7.6">
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AndroHunter" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AndroHunter" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,6 +289,66 @@
       <module name="AndroHunter" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AndroHunter" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AndroHunter" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AndroHunter" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="Python 2.7.6" type="PythonConfigurationType" factoryName="Python">
@@ -242,9 +419,53 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/androhunter/core/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/androhunter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="41" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/androhunter/core/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/androhunter/core/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/androhunter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/androhunter/core/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/androhunter/core/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="10" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="345">
@@ -266,23 +487,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/androhunter/core/search.py">
+    <entry file="file://$PROJECT_DIR$/virustotal/virustotal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4185">
+        <state line="5" column="19" selection-start="142" selection-end="142" vertical-scroll-proportion="-2.647343" vertical-offset="1719" max-vertical-offset="5790">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/androhunter/core/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="10" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+        <state line="7" column="29" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/-634088702/sys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6990">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/androhunter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="278" selection-end="278" vertical-scroll-proportion="0.32451922" vertical-offset="45" max-vertical-offset="600">
+        <state line="30" column="61" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/androhunter/core/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="274" column="20" selection-start="7235" selection-end="7235" vertical-scroll-proportion="0.7766749" vertical-offset="3797" max-vertical-offset="4200">
           <folding />
         </state>
       </provider>

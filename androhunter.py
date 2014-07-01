@@ -28,8 +28,8 @@ def main(arguments):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Analyze some Android Applications...')
     parser.add_argument('-f', '--file', type=str, help='Path to APK file')
-    parser.add_argument('-o', '--online', type=int, default=0, help='<0-1> Disable or Enable online interactions')
+    parser.add_argument('-o', '--online', type=int, default=1, help='<0-1> Disable or Enable online interactions')
     parser.add_argument('-r', '--report', type=str, default='html', help='<html, txt> Select the report output format')
-    parser.add_argument('-g', '--graphic', type=str, default=1, help='<0-1> Disable or Enable CFG')
+    parser.add_argument('-g', '--graphic', type=str, default=0, help='<0-1> Disable or Enable CFG')
     args = parser.parse_args()
     main(args)
